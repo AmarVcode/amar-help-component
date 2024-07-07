@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-up Box Design</title>
+<style>
+  /* Styles for the overlay background */
+  .overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Styles for the popup box */
+  .popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  /* Button styles */
+  .popup button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .popup button:nth-child(1) {
+    background-color: #ff6961;
+    color: #fff;
+  }
+
+  .popup button:nth-child(2) {
+    background-color: #77dd77;
+    color: #fff;
+  }
+
+  .popup button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="overlay" id="popupOverlay">
+  <div class="popup">
+    <h2>Do you want to grow?</h2>
+    <p>Choose your option:</p>
+    <button id="noGrowBtn">I don't want to grow</button>
+    <button id="wantGrowBtn">I want to grow</button>
+  </div>
+</div>
+
+
+</body>
+</html>
