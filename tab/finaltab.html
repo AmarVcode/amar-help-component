@@ -1,0 +1,44 @@
+<script>
+    history.pushState(null, '', '/blogs');
+
+    let smaincatblog = localStorage.getItem("blogsecondcat") || 'category-cloud-data-protect';
+    smaincatblog = '[data-filter=".'+smaincatblog+'"]';
+
+    function functionforloadingblogcat() {
+
+        setTimeout(() => {
+        const elementcat2 = document.querySelector(smaincatblog);
+        elementcat2.click();
+}, 500);
+    }
+        </script>
+
+
+
+
+
+<script>
+    function goSetcatfun(cat){
+        localStorage.setItem('blogsecondcat', cat);
+        let myelemanchor = document.createElement('a');
+        myelemanchor.href = "https://nuo.xcellhost.cloud/view-all-service-blogs/";
+        myelemanchor.click();
+    }
+</script>
+
+
+
+
+
+
+<div onclick="goSetcatfun('category-tally-on-cloud')" class="elementor-element elementor-element-55420e8 elementor-align-center jltma-glass-effect-no elementor-widget elementor-widget-button" data-id="55420e8" data-element_type="widget" data-widget_type="button.default">
+    <div class="elementor-widget-container">
+        <div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+            <span class="elementor-button-content-wrapper">
+                        <span class="elementor-button-text">View All Blogs </span>
+        </span>
+        </a>
+</div>
+    </div>
+    </div>

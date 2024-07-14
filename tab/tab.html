@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <li data-role="parent" class=" wpr-pointer-none wpr-pointer-line-fx wpr-pointer-fx-fade"
+        style="display: inline-block;"><span data-filter=".category-cloud" class=""><i
+                class=" wpr-grid-filters-icon-left"></i>Cloud</span><em class="wpr-grid-filters-sep"></em></li>
+
+
+    <li data-role="parent" class=" wpr-pointer-none wpr-pointer-line-fx wpr-pointer-fx-fade"><span
+            data-filter=".category-cloud"><i class=" wpr-grid-filters-icon-left"></i>Cloud</span><em
+            class="wpr-grid-filters-sep"></em></li>
+
+
+
+    <script>
+        history.pushState(null, "", "/new-url");
+
+    </script>
+
+
+
+    <script>
+
+
+
+        window.onload = function () {
+            function functionforloadingblogcat() {
+                document.querySelector('[data-filter=".category-cloud"]').click();
+                setTimeout(functionforloadingblogcat, 1000);
+            }
+        };
+    </script>
+
+
+
+<script>
+    let smaincatblog = localStorage.getItem("blogsecondcat") || 'category-cloud-data-protect';
+    smaincatblog = '[data-filter=".'+smaincatblog+'"]';
+
+    function functionforloadingblogcat() {
+
+        setTimeout(() => {
+        const elementcat2 = document.querySelector(smaincatblog);
+        elementcat2.click();
+}, 500);
+    }
+        </script>
+
+
+
+
+
+document.querySelector('[data-filter=".category-cloud"]').click();
+
+setTimeout(() => {
+    document.querySelector('[data-filter=".category-cloud"]').click();
+}, 1000);
+
+
+</body>
+
+</html>
