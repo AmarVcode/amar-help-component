@@ -1,0 +1,17 @@
+light
+#007bff
+dark
+#0772b9
+
+
+
+<div id="my-main-heading-home">
+    Experience <span>lightning-fast</span> and secure web <span>hosting.</span><br>With our <span>Reliable</span> and scalable <span>solutions.</span>
+</div>
+<style>
+#my-main-heading-home span{
+    background: linear-gradient(90deg, blue,red);
+    background-clip: text;
+	color: transparent;
+}
+</style>

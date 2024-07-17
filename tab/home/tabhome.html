@@ -1,0 +1,53 @@
+    <style>
+        .homepage_tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .homepage_tab button{
+            border-radius: 0px;
+        }
+    
+        .homepage_tab button {
+            background: #FFFFFF;
+            border: 1px solid #0072ff;
+            padding: 10px 20px;
+            color: #0072ff;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    
+        .homepage_tab button:hover {
+            background: #0072ff;
+            color: white;
+        }
+    
+        .homepage_tab .no_border_home {
+            border-left: none;
+            border-right: none;
+        }
+    
+        .my-active-home {
+            background: #0072ff !important;
+            color: white !important;
+        }
+
+        .my-custom-class-for-tab{
+            display: none;
+        }
+
+      
+    </style>
+    
+    <div class="homepage_tab">
+        <button class="my-custom-bar-tab my-active-home" onclick="myhometabcustom('smb-cloud-home')" id="smb-cloud-home" style="border-top-left-radius: 50px; border-bottom-left-radius: 50px;">SMB Cloud</button>
+        <button class="my-custom-bar-tab no_border_home" onclick="myhometabcustom('cloud-infra-home')" id="cloud-infra-home">Cloud Infra</button>
+        <button class="my-custom-bar-tab" onclick="myhometabcustom('cloud-data-protect-home')" id="cloud-data-protect-home">Cloud Data Protect</button>
+        <button class="my-custom-bar-tab no_border_home" onclick="myhometabcustom('cloud-productivity-home')" id="cloud-productivity-home">Cloud Productivity</button>
+        <button class="my-custom-bar-tab" style="border-right: none;" onclick="myhometabcustom('cloud-monitoring-home')" id="cloud-monitoring-home" >Cloud Monitoring</button>
+        <button class="my-custom-bar-tab" onclick="myhometabcustom('cloud-security-home')" id="cloud-security-home" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">Cloud Security</button>
+    </div>
+
+
+    
