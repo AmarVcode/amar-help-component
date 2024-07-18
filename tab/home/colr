@@ -5,11 +5,11 @@ dark
 
 
 
-<div id="my-main-heading-home">
+<div class="my-main-heading-home">
     Experience <span>lightning-fast</span> and secure web <span>hosting.</span><br>With our <span>Reliable</span> and scalable <span>solutions.</span>
 </div>
 <style>
-#my-main-heading-home span{
+.my-main-heading-home span{
     background: linear-gradient(90deg, blue,red);
     background-clip: text;
 	color: transparent;
